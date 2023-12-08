@@ -35,7 +35,27 @@ public class Main extends JFrame {
 
     }
 
-    public void chatroompanel(JTabbedPane tabbedPane) {
+    public void chatroompanel(JTabbedPane tabbedPane) throws IOException, ParseException {
+        Map<String, Object> hashMap = new HashMap();
+        hashMap.put("IP", "IP");
+        hashMap.put("Port", "Port");
+        hashMap.put("Username","JUsername");
+        JSONObject config = new JSONObject(hashMap);
+        File file = new File("Config.json");
+        if (!file.exists()){
+            FileWriter writer = new FileWriter(file);
+            writer.write(config.toJSONString());
+            writer.flush();
+            writer.close();
+        }
+        else {
+            System.out.println("ConfigExist");
+        }
+        Object cofobj = new JSONParser().parse(new FileReader(file));
+        JSONObject jcof = (JSONObject) cofobj;
+        String IP = (String) jcof.get("IP");
+        String PORT = (String) jcof.get("Port");
+        String Username = (String) jcof.get("Username");
 
         JPanel panel = new JPanel();
         tabbedPane.add(panel, loc[0]);
@@ -55,9 +75,9 @@ public class Main extends JFrame {
         panel2.setBackground(new Color(8303193));
         JButton button = new JButton(loc[2]);
         panel2.setLayout(new GridLayout(0, 1));
-        JTextField ip = new JTextField("IP", 20);
-        JTextField port = new JTextField("PORT", 10);
-        JTextField username = new JTextField("Username");
+        JTextField ip = new JTextField(IP, 20);
+        JTextField port = new JTextField(PORT, 10);
+        JTextField username = new JTextField(Username);
         JCheckBox privat = new JCheckBox(loc[3]);
         panel2.add(button);
         panel2.add(ip);
@@ -74,6 +94,21 @@ public class Main extends JFrame {
             }
         });
         button.addActionListener(actionEvent -> {
+            hashMap.replace("IP", ip.getText());
+            hashMap.replace("Port", port.getText());
+            hashMap.replace("Username", username.getText());
+            JSONObject configu = new JSONObject(hashMap);
+            File file1 = new File("Config.json");
+            FileWriter fileWriter;
+            try {
+                fileWriter = new FileWriter(file1);
+                fileWriter.write(configu.toJSONString());
+            fileWriter.flush();
+            fileWriter.close();
+        } catch (IOException e){
+                throw  new RuntimeException(e);
+            }
+
             int porrtp;
             try {
                 porrtp = Integer.parseInt(port.getText());
@@ -116,7 +151,8 @@ public class Main extends JFrame {
 
     }
     public Object createbutton(){
-        return null;
+        String[] info = {};
+        return new JButton[info.length];
     }
     // Локализация
     public static int choose = 3;
