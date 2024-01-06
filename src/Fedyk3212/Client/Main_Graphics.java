@@ -1,5 +1,7 @@
-package com;
+package Fedyk3212.Client;
 
+import Fedyk3212.Net_Work.Packets;
+import Fedyk3212.User_System.Registration;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -9,19 +11,16 @@ import javax.swing.text.DefaultCaret;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
-public class Main extends JFrame {
-    private ChatClient client;
+public class Main_Graphics extends JFrame {
 
     public final String[] loc = choosedloc();
-    public Main() throws IOException, ParseException {
+    private Client client;
+
+    public Main_Graphics() throws IOException, ParseException {
         super("SuperMesGer_ClientGUI__Made_by_fedyk_3213");
         JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.setPreferredSize(new Dimension(900, 400));
@@ -35,22 +34,24 @@ public class Main extends JFrame {
 
     }
 
+
     public void chatroompanel(JTabbedPane tabbedPane) throws IOException, ParseException {
-        Map<String, Object> hashMap = new HashMap();
+        Map<String, Object> hashMap = new HashMap<>();
         hashMap.put("IP", "IP");
         hashMap.put("Port", "Port");
-        hashMap.put("Username","JUsername");
+        hashMap.put("Username", "JUsername");
         JSONObject config = new JSONObject(hashMap);
         File file = new File("Config.json");
-        if (!file.exists()){
+        if (!file.exists()) {
             FileWriter writer = new FileWriter(file);
             writer.write(config.toJSONString());
             writer.flush();
             writer.close();
-        }
-        else {
+        } else {
             System.out.println("ConfigExist");
         }
+
+        boolean connected = false;
         Object cofobj = new JSONParser().parse(new FileReader(file));
         JSONObject jcof = (JSONObject) cofobj;
         String IP = (String) jcof.get("IP");
@@ -84,15 +85,7 @@ public class Main extends JFrame {
         panel2.add(port);
         panel2.add(username);
         panel2.add(privat);
-
-        msg.addKeyListener(new KeyAdapter() {
-            public void keyPressed(KeyEvent keyEvent) {
-                if (keyEvent.getKeyCode() == 10) {
-                    Main.this.client.send(msg.getText());
-                    msg.setText("");
-                }
-            }
-        });
+        Packets packets = new Packets();
         button.addActionListener(actionEvent -> {
             hashMap.replace("IP", ip.getText());
             hashMap.replace("Port", port.getText());
@@ -103,36 +96,62 @@ public class Main extends JFrame {
             try {
                 fileWriter = new FileWriter(file1);
                 fileWriter.write(configu.toJSONString());
-            fileWriter.flush();
-            fileWriter.close();
-        } catch (IOException e){
-                throw  new RuntimeException(e);
-            }
-
-            int porrtp;
-            try {
-                porrtp = Integer.parseInt(port.getText());
-            } catch (Exception e) {
-                porrtp = 65433;
-            }
-            String ipp = ip.getText();
-            if (Objects.equals(ipp, "IP")){ipp = "127.0.0.1";}
-            if (this.client != null)
-                try {
-                    this.client.close();
-                    jTextArea.selectAll();
-                    jTextArea.replaceSelection("");
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-            try {
-                this.client = new ChatClient(ipp, porrtp, jTextArea);
-                this.client.send("/nick " + username.getText());
-                JOptionPane.showMessageDialog(panel2, loc[4], "Succes", JOptionPane.INFORMATION_MESSAGE);
+                fileWriter.flush();
+                fileWriter.close();
             } catch (IOException e) {
-                JOptionPane.showMessageDialog(panel2, e.getMessage(), loc[5], JOptionPane.INFORMATION_MESSAGE);
+                throw new RuntimeException(e);
+            }
+            try {
+                if (client != null) {
+                    client.close();
+                }
+                if (get_token() != null) {
+                    final_connect(ip, port, jTextArea);
+                } else {
+                    Registration registration = new Registration(ip.getText(), Integer.parseInt(port.getText()));
+                    registration.Show_registration_menu();
+                }
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(Frame.getFrames()[0], "Error " + e, "Error", JOptionPane.INFORMATION_MESSAGE);
             }
         });
+        msg.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == 10) {
+                    try {
+                        client.send(Packets.send_packet(msg.getText(), get_token()));
+                    } catch (IOException ex) {
+                        throw new RuntimeException(ex);
+                    }
+                    msg.setText("");
+                }
+            }
+        });
+    }
+
+    void final_connect(JTextField ip, JTextField port, JTextArea jTextArea) throws IOException {
+        this.client = new Client(ip.getText(), Integer.parseInt(port.getText()), jTextArea);
+        Reader reader = new Reader(client.socket, jTextArea);
+    }
+String token = null;
+    String get_token() throws IOException {
+        try {
+            if (token == null) {
+                BufferedReader reader = new BufferedReader(new FileReader("token.txt"));
+                token = reader.readLine();
+                reader.close();
+                return token;
+            }
+        } catch (IOException ex) {
+            return null;
+        }
+        return token;
+    }
+
+    void objectDestroy(Object o) {
+        o = null;
+        System.gc();
     }
 
     public void helppanel(JTabbedPane tabbedPane) {
@@ -142,20 +161,18 @@ public class Main extends JFrame {
         JLabel label = new JLabel(loc[7]);
         panel3.add(label);
     }
-    public void publicservers(JTabbedPane tabbedPane){
+
+    public void publicservers(JTabbedPane tabbedPane) {
         JPanel panel4 = new JPanel();
-        JButton update = new JButton();
         panel4.setLayout(new GridLayout());
         panel4.setBackground(new Color(8303193));
         tabbedPane.add(panel4, loc[8]);
 
     }
-    public Object createbutton(){
-        String[] info = {};
-        return new JButton[info.length];
-    }
+
     // Локализация
     public static int choose = 3;
+
     public String[] choosedloc() throws IOException, ParseException {
         Map<String, Object> hashMapru = getStringObjectMap();
         Map<String, Object> hashMapEng = getObjectMap();
@@ -171,44 +188,53 @@ public class Main extends JFrame {
         } else {
             System.out.println("existRU");
         }
-        if (!file1.exists()){
+        if (!file1.exists()) {
             FileWriter writer1 = new FileWriter(file1);
             writer1.write(engobj.toJSONString());
             writer1.flush();
             writer1.close();
-        }
-        else {
+        } else {
             System.out.println("existEng");
         }
-            Object obj = new JSONParser().parse(new FileReader(file));
-            Object obj2 = new JSONParser().parse(new FileReader(file1));
-            JSONObject jeng = (JSONObject) obj2;
-            JSONObject jru = (JSONObject) obj;
+        Object obj = new JSONParser().parse(new FileReader(file));
+        Object obj2 = new JSONParser().parse(new FileReader(file1));
+        JSONObject jeng = (JSONObject) obj2;
+        JSONObject jru = (JSONObject) obj;
         String[] options = {"English", "Русский"};
-        choose = JOptionPane.showOptionDialog(null,"Choose your language", "Click a Button", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
-        String chatroom = null;
-        String settgs = null;
-        String Bind = null;
-        String Pivatemode = null;
-        String succes = null;
-        String Fail = null;
-        String help = null;
-        String helpdesc = null;
-        String publicservers = null;
+        choose = JOptionPane.showOptionDialog(null, "Choose your language", "Click a Button", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+        String chatroom;
+        String settgs;
+        String Bind;
+        String Pivatemode;
+        String succes;
+        String Fail;
+        String help;
+        String helpdesc;
+        String publicservers;
         if (choose == 1) {
             chatroom = (String) jru.get("Chatroom");
             settgs = (String) jru.get("Setting");
-            Bind = (String) jru.get( "Bind");
+            Bind = (String) jru.get("Bind");
             Pivatemode = (String) jru.get("Private mode");
             succes = (String) jru.get("Succes");
             Fail = (String) jru.get("Fail");
             help = (String) jru.get("Help");
             helpdesc = (String) jru.get("HelpDesc");
             publicservers = (String) jru.get("PublicServer");
-        }else if (choose == 0){
+        } else if (choose == 0) {
             chatroom = (String) jeng.get("Chatroom");
             settgs = (String) jeng.get("Setting");
-            Bind = (String) jeng.get( "Bind");
+            Bind = (String) jeng.get("Bind");
+            Pivatemode = (String) jeng.get("Private mode");
+            succes = (String) jeng.get("Succes");
+            Fail = (String) jeng.get("Fail");
+            help = (String) jeng.get("Help");
+            helpdesc = (String) jeng.get("HelpDesc");
+            publicservers = (String) jeng.get("PublicServer");
+        } else {
+            chatroom = (String) jeng.get("Chatroom");
+            settgs = (String) jeng.get("Setting");
+            Bind = (String) jeng.get("Bind");
             Pivatemode = (String) jeng.get("Private mode");
             succes = (String) jeng.get("Succes");
             Fail = (String) jeng.get("Fail");
@@ -216,18 +242,7 @@ public class Main extends JFrame {
             helpdesc = (String) jeng.get("HelpDesc");
             publicservers = (String) jeng.get("PublicServer");
         }
-        else {
-            chatroom = (String) jeng.get("Chatroom");
-            settgs = (String) jeng.get("Setting");
-            Bind = (String) jeng.get( "Bind");
-            Pivatemode = (String) jeng.get("Private mode");
-            succes = (String) jeng.get("Succes");
-            Fail = (String) jeng.get("Fail");
-            help = (String) jeng.get("Help");
-            helpdesc = (String) jeng.get("HelpDesc");
-            publicservers = (String) jeng.get("PublicServer");
-        }
-        return new String[]{chatroom, settgs, Bind, Pivatemode, succes, Fail, help,helpdesc,publicservers};
+        return new String[]{chatroom, settgs, Bind, Pivatemode, succes, Fail, help, helpdesc, publicservers};
     }
 
     private static Map<String, Object> getObjectMap() {
@@ -246,7 +261,7 @@ public class Main extends JFrame {
 
     private static Map<String, Object> getStringObjectMap() {
         Map<String, Object> hashMapru = new HashMap<>();
-        hashMapru.put("Chatroom","Чат комната");
+        hashMapru.put("Chatroom", "Чат комната");
         hashMapru.put("Setting", "Настройки");
         hashMapru.put("Bind", "Подключиться");
         hashMapru.put("Private mode", "Приватный режим");
@@ -259,7 +274,7 @@ public class Main extends JFrame {
     }
 
     public static void main(String[] args) throws IOException, ParseException {
-        Main frame = new Main();
+        Main_Graphics frame = new Main_Graphics();
         frame.setResizable(false);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.pack();

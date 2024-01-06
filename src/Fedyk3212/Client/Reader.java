@@ -1,4 +1,4 @@
-package com;
+package Fedyk3212.Client;
 
 import java.io.BufferedReader;
 import java.io.IOException;
