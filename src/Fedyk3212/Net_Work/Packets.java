@@ -1,8 +1,11 @@
 package Fedyk3212.Net_Work;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+
+import Fedyk3212.Client.Main_Graphics;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -40,6 +43,17 @@ public class Packets {
            valid.put("AN", "SupMesGer_Gui");
            valid.put("UI", "12:31:12:31");
            return valid.toString();
+       }
+       public static String ping_token() throws IOException {
+           Map<Object, String> ping_token = new HashMap<>();
+           ping_token.put("N", "PT");
+           if (Main_Graphics.get_token() != null) {
+               ping_token.put("T", Main_Graphics.get_token());
+           }else {
+               ping_token.put("T", "IDK");
+           }
+           JSONObject jp = new JSONObject(ping_token);
+           return jp.toJSONString();
        }
    }
     

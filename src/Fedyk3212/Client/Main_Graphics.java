@@ -1,6 +1,7 @@
 package Fedyk3212.Client;
 
 import Fedyk3212.Net_Work.Packets;
+import Fedyk3212.Net_Work.ServiceSocket;
 import Fedyk3212.User_System.Registration;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -39,7 +40,6 @@ public class Main_Graphics extends JFrame {
         Map<String, Object> hashMap = new HashMap<>();
         hashMap.put("IP", "IP");
         hashMap.put("Port", "Port");
-        hashMap.put("Username", "JUsername");
         JSONObject config = new JSONObject(hashMap);
         File file = new File("Config.json");
         if (!file.exists()) {
@@ -56,7 +56,6 @@ public class Main_Graphics extends JFrame {
         JSONObject jcof = (JSONObject) cofobj;
         String IP = (String) jcof.get("IP");
         String PORT = (String) jcof.get("Port");
-        String Username = (String) jcof.get("Username");
 
         JPanel panel = new JPanel();
         tabbedPane.add(panel, loc[0]);
@@ -78,21 +77,27 @@ public class Main_Graphics extends JFrame {
         panel2.setLayout(new GridLayout(0, 1));
         JTextField ip = new JTextField(IP, 20);
         JTextField port = new JTextField(PORT, 10);
-        JTextField username = new JTextField(Username);
         JCheckBox privat = new JCheckBox(loc[3]);
         panel2.add(button);
         panel2.add(ip);
         panel2.add(port);
-        panel2.add(username);
         panel2.add(privat);
         Packets packets = new Packets();
         button.addActionListener(actionEvent -> {
             hashMap.replace("IP", ip.getText());
             hashMap.replace("Port", port.getText());
-            hashMap.replace("Username", username.getText());
             JSONObject configu = new JSONObject(hashMap);
             File file1 = new File("Config.json");
             FileWriter fileWriter;
+            File file3 = new File("token.txt");
+            if (file3.exists()){
+                try {
+                    ServiceSocket socket = new ServiceSocket(ip.getText(), Integer.parseInt(port.getText()));
+                    ServiceSocket.SendTokenValid();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
             try {
                 fileWriter = new FileWriter(file1);
                 fileWriter.write(configu.toJSONString());
@@ -104,8 +109,9 @@ public class Main_Graphics extends JFrame {
             try {
                 if (client != null) {
                     client.close();
+                    clearTextArea(jTextArea);
                 }
-                if (get_token() != null) {
+                if (Main_Graphics.get_token() != null) {
                     final_connect(ip, port, jTextArea);
                 } else {
                     Registration registration = new Registration(ip.getText(), Integer.parseInt(port.getText()));
@@ -120,7 +126,7 @@ public class Main_Graphics extends JFrame {
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == 10) {
                     try {
-                        client.send(Packets.send_packet(msg.getText(), get_token()));
+                        client.send(Packets.send_packet(msg.getText(), Main_Graphics.get_token()));
                     } catch (IOException ex) {
                         throw new RuntimeException(ex);
                     }
@@ -134,8 +140,14 @@ public class Main_Graphics extends JFrame {
         this.client = new Client(ip.getText(), Integer.parseInt(port.getText()), jTextArea);
         Reader reader = new Reader(client.socket, jTextArea);
     }
-String token = null;
-    String get_token() throws IOException {
+
+    static String token = null;
+
+   public static void RemToken() {
+        token = null;
+    }
+
+    public static String get_token() throws IOException {
         try {
             if (token == null) {
                 BufferedReader reader = new BufferedReader(new FileReader("token.txt"));
@@ -147,6 +159,11 @@ String token = null;
             return null;
         }
         return token;
+    }
+
+    void clearTextArea(JTextArea jTextArea) {
+        jTextArea.selectAll();
+        jTextArea.setText("");
     }
 
     void objectDestroy(Object o) {

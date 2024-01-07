@@ -1,5 +1,6 @@
 package Fedyk3212.Net_Work;
 
+import Fedyk3212.Client.Main_Graphics;
 import Fedyk3212.Resources.Errors;
 import Fedyk3212.Resources.Succefuls;
 
@@ -43,6 +44,23 @@ public class ServiceSocket {
             writer.close();
         }
     }
+    public static void SendTokenValid() throws IOException {
+        servicewriter.println(Packets.ping_token());
+        String answer = null;
+        while (answer == null){
+            answer = servicereciver.readLine();
+        }
+        if (answer.equals("Error")){
+            File file = new File("token.txt");
+            if (file.delete()){
+                System.out.println("File deleted");
+                Main_Graphics.RemToken();
+            }
+            else {
+                System.out.println("File not found");
+            }
+        }
+    }
 
     public static void sendValidData(String data) throws IOException {
         servicewriter.println(data);
@@ -53,9 +71,5 @@ public class ServiceSocket {
         if (answer.equals("Error")) {
             Errors.Show_validation_error();
         }
-    }
-
-    public void ReciveAnswer() {
-
     }
 }

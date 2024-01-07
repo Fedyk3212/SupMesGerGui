@@ -25,7 +25,7 @@ public class Registration implements IRegistration {
         this.frame = new JFrame("Login/Registration");
         frame.setSize(300, 300);
         frame.setLayout(new GridLayout(0, 1));
-        frame.setLocationRelativeTo(null);
+        frame.setLocation(1,1);
         frame.setResizable(false);
         frame.getContentPane().setBackground(new Color(0x6DEAC0));
     }

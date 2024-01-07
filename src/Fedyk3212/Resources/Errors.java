@@ -16,4 +16,7 @@ public class Errors {
     public static void Show_Ethernet_error(){
         JOptionPane.showMessageDialog(Frame.getFrames()[0], "Check Ethernet Connection, chat turned local mode, to fix it restart your app", "No Ethernet?", JOptionPane.INFORMATION_MESSAGE);
     }
+    public static void Show_NOREG_error(){
+        JOptionPane.showMessageDialog(Frame.getFrames()[0], "You are no registred on this server or your token uptime please login/reg", "Error", JOptionPane.ERROR_MESSAGE);
+    }
 }
