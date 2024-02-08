@@ -1,7 +1,5 @@
-package Fedyk3212.Client;
+package Fedyk3212.client;
 
-import Fedyk3212.Net_Work.Packets;
-import Fedyk3212.Net_Work.ServiceSocket;
 import com.sun.istack.internal.NotNull;
 
 import java.awt.*;

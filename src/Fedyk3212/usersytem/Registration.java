@@ -1,23 +1,22 @@
-package Fedyk3212.User_System;
+package Fedyk3212.usersytem;
 
-import Fedyk3212.Client.Client;
-import Fedyk3212.Net_Work.Packets;
-import Fedyk3212.Net_Work.ServiceSocket;
-import Fedyk3212.Resources.Errors;
+import Fedyk3212.client.Client;
+import Fedyk3212.network.ServiceSocket;
+import Fedyk3212.resource.exception.DisplayException;
+import Fedyk3212.resource.exception.EthrenetException;
+import com.sun.istack.internal.NotNull;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.IOException;
 
 public class Registration implements IRegistration {
-    private JFrame frame;
+    private final JFrame frame;
     private Client client;
-    private String ip;
-    private int port;
+    private final String ip;
+    private final int port;
     public JTextField login, password;
-    public Registration(String ip, int port) {
+    public Registration(@NotNull String ip, int port) {
         this.ip = ip;
         this.port = port;
         login = new JTextField();
@@ -52,15 +51,15 @@ public class Registration implements IRegistration {
         jButtons[0].addActionListener(actionEvent -> {
             try {
                 Send_login_request();
-            } catch (IOException e) {
-                Errors.Show_Ethernet_error();
+            } catch (Exception e) {
+                DisplayException.display(e);
                 throw new RuntimeException(e);
             }
         });
         jButtons[1].addActionListener(actionEvent -> {
             try {
                 Send_registration_request();
-            } catch (IOException e) {
+            } catch (Exception e) {
                 throw new RuntimeException(e);
             }
         });
@@ -68,22 +67,22 @@ public class Registration implements IRegistration {
     }
 
     public void Send_registration_request() throws IOException {
-        ServiceSocket serviceSocket = new ServiceSocket(ip, port);
         try {
+            ServiceSocket serviceSocket = new ServiceSocket(ip, port);
             ServiceSocket.sendRegReq(login.getText(), password.getText());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (Exception e) {
+            DisplayException.display(e);
         }
     }
 
     @Override
-    public void Send_login_request() throws IOException {
+    public void Send_login_request() throws IOException, EthrenetException {
         ServiceSocket serviceSocket = new ServiceSocket(ip, port);
         try {
             ServiceSocket.sendLoginReq(login.getText(), password.getText());
             frame.setVisible(false);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (Exception e) {
+            DisplayException.display(e);
         }
     }
 }

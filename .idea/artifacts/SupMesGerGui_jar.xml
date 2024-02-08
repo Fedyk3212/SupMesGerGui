@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="SupMesGerGui:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/SupMesGerGui_jar</output-path>
-    <root id="archive" name="SupMesGerGui.jar">
-      <element id="module-output" name="SupMesGerGui" />
-      <element id="extracted-dir" path="$USER_HOME$/Загрузки/json-simple-1.1.1.jar" path-in-jar="/" />
-    </root>
-  </artifact>
-</component>

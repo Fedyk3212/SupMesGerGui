@@ -1,4 +1,4 @@
-package Fedyk3212.Resources;
+package Fedyk3212.resource;
 
 import javax.swing.*;
 import java.awt.*;

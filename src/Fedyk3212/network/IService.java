@@ -1,4 +1,4 @@
-package Fedyk3212.Net_Work;
+package Fedyk3212.network;
 
 import java.io.IOException;
 

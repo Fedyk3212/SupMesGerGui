@@ -1,10 +1,11 @@
-package Fedyk3212.User_System;
+package Fedyk3212.usersytem;
 
-import javax.swing.*;
+import Fedyk3212.resource.exception.EthrenetException;
+
 import java.io.IOException;
 
 public interface IRegistration {
     void Show_registration_menu();
     void Send_registration_request() throws IOException;
-    void Send_login_request() throws IOException;
+    void Send_login_request() throws IOException, EthrenetException;
 }

@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: Fedyk3212.Client.Main_Graphics
+Main-Class: Fedyk3212.client.MainGraphics
 
