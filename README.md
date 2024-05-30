@@ -1,6 +1,8 @@
 # Open Chat
 _former name SupMesGER GUI_
 
+**if you are server admin or tranlator see wiki**
+
 # Client plus server (see Releases) in a simple program that is gradually expanding
 ## minimum needed JRE 8
 
