@@ -1,4 +1,4 @@
-Сменить язык
+Сменить язык *клик ниже
 
 [![Русский язык](https://img.shields.io/badge/lang-%D1%80%D1%83%D1%81-red?style=flat)](https://github.com/BackendIsFun/Open-Chat/blob/master/Readme.ru.md)
 # Open Chat
