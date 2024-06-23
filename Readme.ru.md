@@ -1,4 +1,4 @@
-[![English](https://img.shields.io/badge/lang-%D1%80%D1%83%D1%81-red?style=flat)]()
+[![English](https://img.shields.io/badge/lang-eng-green?style=flat)]()
 # Open Chat
 _бывшее название SupMesGER GUI_
 
