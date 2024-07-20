@@ -1,7 +1,7 @@
 Change language
 
 
-[![English](https://img.shields.io/badge/lang-eng-green?style=flat)](https://github.com/BackendIsFun/Open-Chat/blob/master/README.md)
+[![English](https://img.shields.io/badge/lang-eng-green?style=flat)](https://github.com/BackendIsFun/Open-Chat/blob/master/README.md](https://github.com/BackendIsFun/Open-Chat/blob/master/Readme.md))
 # Open Chat
 _бывшее название SupMesGER GUI_
 
