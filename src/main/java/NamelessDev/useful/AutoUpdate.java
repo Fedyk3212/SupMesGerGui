@@ -1,0 +1,59 @@
+package NamelessDev.useful;
+
+
+import NamelessDev.resource.exception.DisplayException;
+
+import javax.xml.ws.http.HTTPException;
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class AutoUpdate {
+    private static final URL url;
+
+    static {
+        try {
+            url = new URL("https://github.com/BackendIsFun/Open-Chat/releases/download/2.0/OpenChat.jar");
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void update() {
+        Logger.Log(AutoUpdate.class, "Try to AutoUpdate");
+        try {
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+            checkStatus(connection.getResponseCode());
+            writeUpdateToFIle(connection.getInputStream());
+            System.exit(0);
+        } catch (Exception e) {
+            DisplayException.display(e);
+        }
+    }
+
+    static void checkStatus(int response) {
+        Logger.Log(AutoUpdate.class, "Response is " + response);
+        if (response != 200) {
+            throw new HTTPException(response);
+        }
+    }
+
+    static void writeUpdateToFIle(InputStream inputStream) throws IOException {
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        int nRead;
+        byte[] data = new byte[2048];
+        while ((nRead = inputStream.read(data, 0, data.length)) != -1) {
+            buffer.write(data, 0, nRead);
+        }
+        File file = new File("OpenChat.jar");
+        if (file.exists()) {
+            file.delete();
+            file.createNewFile();
+        } else
+            file.createNewFile();
+        FileOutputStream fileOutputStream = new FileOutputStream(file);
+        fileOutputStream.write(buffer.toByteArray());
+    }
+}

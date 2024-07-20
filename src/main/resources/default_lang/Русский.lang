@@ -1,0 +1,39 @@
+#Panels
+ChatroomPanel=Чат комната
+SettingPanel=Настройки
+HelpPanel=Помощь
+HelpPanelDesc=<html>1) Чтобы зайти на сервер нажмите кнопку подключиться введя IP и порт в соответствующие поля<br>2) Чтобы сменить язык нажмите сменить язык :-)<br>3) Чтобы отключиться от сервера нажмите отключится в настройках<br>4) Вкладка публичные сервера временно не работает<br> 5) Если хотите написать свой перевод или пакет смотрите Example.txt в папке localisation или смотрите wiki на github </html>
+PublicServerPanel=Публичные сервера
+
+#Buttons
+ConnectButton=Подключиться
+ChangeLanguageButton=Сменить Язык
+DisconnectButton=Отключиться
+YesButton=Да
+NoButton=Нет
+DontRememberButton=Не напоминать мне
+
+#Messages
+MessageSuccesConnect=Подключение успешно
+MessageFail=Я сломался
+MessageToLongMessage=Слишком длинное сообщение
+MessageToShortMessage=Слишком короткая строка
+ChooseLanguageMessage=Выберите ваш язык
+
+#Error
+ErrorRegistrationTile=Ошибка регистрации
+ErrorRegistration=Ошибка регистрации, некорректные данные или такой пользователь уже существует
+
+#LangPacks
+LangPackWindowTile=Установить языковой пакет
+LangPackDescriptionButton=Описание
+LangPackInstallButton=Установить
+
+#UpdateWindow
+UpdateWindowTile=Обновление
+UpdateWindowMessage=<html>Версия чата устарела, некоторые вещи могут не работать или работать неккоректно<br>Вы хотите скачать последнюю версию?</html>
+
+#Authentication Window
+AuthenticationWindowTile=Вход/Регистрация
+AuthenticationWindowLoginButton=Вход
+AuthenticationWindowRegistrationButton=Регистрация

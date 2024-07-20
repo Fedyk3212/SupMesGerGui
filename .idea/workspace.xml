@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3755c982-c4c5-4dfd-bf28-dfcd43499a0d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/OpenChat_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/bouncycastle_bcpkix_jdk18on.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/bouncycastle_bcprov_jdk18on.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/google_code_gson.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/googlecode_json_simple.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenChat.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.ru.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/additionalgraphics/GraphicsHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/additionalgraphics/LoadingScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/client/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/client/MainGraphics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/client/Reader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/config/Configs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/config/Localisation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/cryptography/AesCrypterDecrypter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/cryptography/CrypterDecrypter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/cryptography/KeyGen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/network/IService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/network/Packets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/network/ServiceSocket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/network/serverpackets/PacketParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/Errors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/Imageloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/Succefuls.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/exception/DisplayException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/exception/EncryptException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/exception/EthrenetException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/exception/LoginException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/exception/NoregException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/exception/RegistrationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/usersytem/IRegistration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/usersytem/Registration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/usersytem/TokenWriteReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/version.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2jWDUCHLpg3P5KDoIpnfGTqW1UN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/mnt/files/.LinuxCat/Программирование/OpenChatProject"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3755c982-c4c5-4dfd-bf28-dfcd43499a0d" name="Changes" comment="" />
+      <created>1721493954546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721493954546</updated>
+    </task>
+    <servers />
+  </component>
+</project>
