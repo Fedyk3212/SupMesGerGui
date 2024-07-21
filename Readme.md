@@ -7,7 +7,7 @@ _former name SupMesGER GUI_
 **if you are server admin or tranlator see wiki**
 
 # Client plus server (see Releases) in a simple program that is gradually expanding
-## minimum needed JRE 8
+## minimum needed JRE 17
 
 ![Image alt](https://github.com/Fedyk3212/Open-Chat/blob/228150aa8ff3b40c62c5f90b037d6cb7edae6936/logo.png)
 
