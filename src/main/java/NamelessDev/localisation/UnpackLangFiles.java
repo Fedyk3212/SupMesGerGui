@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 public class UnpackLangFiles {
 
     static String TargetPath = "ConfigsAndLoc/localisation/";
-    static String respath = "./default_lang/";
+    static String respath = "/default_lang/";
     public static void unpack() throws IOException, URISyntaxException {
         ArrayList<String> localPaths = new ArrayList<>();
         ArrayList<InputStream> streamArrayList = new ArrayList<>();
@@ -53,9 +53,18 @@ public class UnpackLangFiles {
 
     public static ArrayList<String> pathList() throws IOException, URISyntaxException {
         ArrayList<String> pathList = new ArrayList<>();
-        URI uri = Objects.requireNonNull(ClassLoader.getSystemClassLoader().getResource(respath)).toURI();
+        URI uri = Objects.requireNonNull(UnpackLangFiles.class.getResource(respath)).toURI();
         Path myPath;
-        myPath = Paths.get(uri);
+        if (uri.getScheme().equals("jar")) {
+            try {
+                fileSystem = FileSystems.newFileSystem(uri, Collections.emptyMap());
+            } catch (FileSystemAlreadyExistsException ignore) {
+            }
+
+            myPath = fileSystem.getPath(respath);
+        } else {
+            myPath = Paths.get(uri);
+        }
         Stream<Path> walk = Files.walk(myPath, 1);
         for (Iterator<Path> it = walk.iterator(); it.hasNext(); ) {
             String path = it.next().toString();

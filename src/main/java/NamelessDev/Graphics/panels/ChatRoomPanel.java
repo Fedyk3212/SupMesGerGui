@@ -18,7 +18,6 @@ import java.nio.charset.StandardCharsets;
 public class ChatRoomPanel extends JPanel {
     private static final JTextArea jTextArea = new JTextArea();
     private static int maxMessageLimit = 450;
-
     public static void setMaxMessageLImit(int limit) {
         maxMessageLimit = limit;
     }
@@ -27,6 +26,9 @@ public class ChatRoomPanel extends JPanel {
         setLayout(new BorderLayout());
         add(new JScrollPane(ChatTextArea()), "Center");
         add(messageTextField(), "South");
+    }
+    int getSymbolSize(String s){
+        return getGraphics().getFontMetrics().stringWidth(s);
     }
 
     JTextArea ChatTextArea(){

@@ -3,18 +3,18 @@ package NamelessDev.useful;
 
 import NamelessDev.resource.exception.DisplayException;
 
-import javax.xml.ws.http.HTTPException;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.http.HttpConnectTimeoutException;
 
 public class AutoUpdate {
     private static final URL url;
 
     static {
         try {
-            url = new URL("https://github.com/BackendIsFun/Open-Chat/releases/download/2.0/OpenChat.jar");
+            url = new URL("https://github.com/BackendIsFun/Open-Chat/releases/latest/download/OpenChat.jar");
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
@@ -33,10 +33,10 @@ public class AutoUpdate {
         }
     }
 
-    static void checkStatus(int response) {
+    static void checkStatus(int response) throws HttpConnectTimeoutException {
         Logger.Log(AutoUpdate.class, "Response is " + response);
         if (response != 200) {
-            throw new HTTPException(response);
+            throw new HttpConnectTimeoutException(String.valueOf(response));
         }
     }
 

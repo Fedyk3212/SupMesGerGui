@@ -47,7 +47,7 @@ public class CheckUpdate {
 
             }
         } catch (Exception ex) {
-            DisplayException.display(ex);
+            Logger.Log(AutoUpdate.class, "Cannot get update + " + ex);
         }
 
     }

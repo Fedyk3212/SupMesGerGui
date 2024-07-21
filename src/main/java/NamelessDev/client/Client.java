@@ -19,8 +19,7 @@ public class Client {
 
     public Client(String host, int port, JTextArea jTextArea) throws IOException {
         this.socket = new Socket(host, port);
-        JOptionPane.showMessageDialog(Frame.getFrames()[0], "Succesful connection", "Succes", JOptionPane.INFORMATION_MESSAGE);
-        //       Files.createFile(Paths.get("token.txt"));
+        JOptionPane.showMessageDialog(Frame.getFrames()[0], "Successful connection", "Success", JOptionPane.INFORMATION_MESSAGE);
         this.readr = new Reader(this.socket, jTextArea);
         this.writer = new PrintWriter(new OutputStreamWriter(this.socket.getOutputStream(), StandardCharsets.UTF_8), true);
         this.readr.start();

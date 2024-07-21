@@ -34,7 +34,7 @@ public class Localisation {
 
     public static void initLocalisation() throws IOException, URISyntaxException, ParseException {
         UnpackLangFiles.unpack();
-        UnpackLangPacks.unpack();
+       // UnpackLangPacks.unpack();
         firstChoiceMenu();
         choose();
         new Localisation();

@@ -4,6 +4,7 @@ import NamelessDev.Graphics.tabbedpanes.MainTabbedPane;
 
 
 import javax.swing.*;
+import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 import java.awt.*;
 import java.io.IOException;
 
@@ -31,7 +32,8 @@ public class MainGraphics extends JFrame {
         frame.setVisible(true);
     }
     static void setPlaf() throws UnsupportedLookAndFeelException, ClassNotFoundException, InstantiationException, IllegalAccessException {
-        UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
+
+        UIManager.setLookAndFeel(new NimbusLookAndFeel());
     }
 
 }

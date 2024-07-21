@@ -4,51 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3755c982-c4c5-4dfd-bf28-dfcd43499a0d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/OpenChat_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/bouncycastle_bcpkix_jdk18on.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/bouncycastle_bcprov_jdk18on.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/google_code_gson.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/googlecode_json_simple.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenChat.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.ru.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/additionalgraphics/GraphicsHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/additionalgraphics/LoadingScreen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/client/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/client/MainGraphics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/client/Reader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/config/Configs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/config/Localisation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/cryptography/AesCrypterDecrypter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/cryptography/CrypterDecrypter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/cryptography/KeyGen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/network/IService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/network/Packets.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/network/ServiceSocket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/network/serverpackets/PacketParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/Errors.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/Imageloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/Succefuls.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/exception/DisplayException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/exception/EncryptException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/exception/EthrenetException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/exception/LoginException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/exception/NoregException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/resource/exception/RegistrationException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/usersytem/IRegistration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/usersytem/Registration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fedyk3212/usersytem/TokenWriteReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version.txt" beforeDir="false" />
+    <list default="true" id="3755c982-c4c5-4dfd-bf28-dfcd43499a0d" name="Changes" comment="Added Gradle sup">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigsAndLoc/Configs.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigsAndLoc/Configs.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigsAndLoc/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigsAndLoc/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/panels/ChatRoomPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/panels/ChatRoomPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/client/ConsoleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/client/ConsoleHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/localisation/Localisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/localisation/Localisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/localisation/UnpackLangFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/localisation/UnpackLangFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/ChatStringFormatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,26 +31,120 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OpenChat" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OpenChat" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OpenChat" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OpenChat" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2jWDUCHLpg3P5KDoIpnfGTqW1UN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/mnt/files/.LinuxCat/Программирование/OpenChatProject"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.OpenChat [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OpenChat [buildDependents].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OpenChat [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OpenChat [check].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OpenChat [jar].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/usr/bin/scenebuilder&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Gradle.OpenChat [build]">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="NamelessDev.client.Main" />
+      <module name="OpenChat.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpenChat [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.OpenChat [build]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.OpenChat [build]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -89,6 +154,177 @@
       <option name="presentableId" value="Default" />
       <updated>1721493954546</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added Gradle sup">
+      <option name="closed" value="true" />
+      <created>1721493987874</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721493987874</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added Gradle sup">
+      <option name="closed" value="true" />
+      <created>1721493997695</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721493997695</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Gradle sup">
+      <option name="closed" value="true" />
+      <created>1721494011858</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721494011858</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Gradle sup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Gradle sup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/client/Main.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/client/Main.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/client/Main.java</url>
+          <line>17</line>
+          <properties class="NamelessDev.client.Main" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java</url>
+          <line>19</line>
+          <properties class="NamelessDev.Graphics.MainGraphics" method="initMainGraphics">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java</url>
+          <line>25</line>
+          <properties class="NamelessDev.Graphics.MainGraphics" method="constructMainFrame">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java</url>
+          <line>33</line>
+          <properties class="NamelessDev.Graphics.MainGraphics" method="setPlaf">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java</url>
+          <line>23</line>
+          <properties class="NamelessDev.useful.CheckUpdate" method="CheckForUpdates">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
+          <line>22</line>
+          <properties class="NamelessDev.useful.AutoUpdate" method="update">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
+          <line>35</line>
+          <properties class="NamelessDev.useful.AutoUpdate" method="checkStatus">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
+          <line>42</line>
+          <properties class="NamelessDev.useful.AutoUpdate" method="writeUpdateToFIle">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/localisation/UnpackLangFiles.java</url>
+          <line>53</line>
+          <properties class="NamelessDev.localisation.UnpackLangFiles" method="pathList">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
