@@ -67,20 +67,21 @@ public class SettingPanel extends JPanel {
     JButton getConnectButton() {
         connectButton.addActionListener(actionEvent -> {
             try {
-                new ServiceSocket(ip.getText(), Integer.parseInt(port.getText()));
+                var serviceSocket = new ServiceSocket(ip.getText(), Integer.parseInt(port.getText()));
                 if (NetworkVariables.getAESKEY() == null) {
-                    ServiceSocket.sendPublicKey();
+                    serviceSocket.sendPublicKey();
                 }
-                new ServiceSocket(ip.getText(), Integer.parseInt(port.getText()));
-                if (!ServiceSocket.sendKeyCHeckRequest()){
-                    ServiceSocket.sendPublicKey();
+                serviceSocket = new ServiceSocket(ip.getText(), Integer.parseInt(port.getText()));
+                if (!serviceSocket.sendKeyCHeckRequest()) {
+                    serviceSocket = new ServiceSocket(ip.getText(), Integer.parseInt(port.getText()));
+                    serviceSocket.sendPublicKey();
                 }
                 configs.changeByName("IP", ip.getText());
                 configs.changeByName("Port", port.getText());
                 File tokenfile = new File(Token.path);
                 if (tokenfile.exists()) {
-                    new ServiceSocket(ip.getText(), Integer.parseInt(port.getText()));
-                    ServiceSocket.sendTokenValid();
+                    serviceSocket = new ServiceSocket(ip.getText(), Integer.parseInt(port.getText()));
+                    serviceSocket.sendTokenValid();
                     if (Client.client != null) {
                         Client.client.close();
                         ChatRoomPanel.clearTextArea();

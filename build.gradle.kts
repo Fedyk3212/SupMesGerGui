@@ -9,7 +9,6 @@ javafx {
 }
 
 group = "NamelessDev.client"
-version = "2.0 Rework"
 
 java.sourceCompatibility = JavaVersion.VERSION_11
 val mainClass = "NamelessDev.client.Main"

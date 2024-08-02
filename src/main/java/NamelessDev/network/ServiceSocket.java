@@ -12,7 +12,10 @@ import NamelessDev.resource.exception.LoginException;
 import NamelessDev.useful.Logger;
 import org.json.simple.JSONObject;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
@@ -26,7 +29,7 @@ public class ServiceSocket {
         try {
             serviceSocket = new Socket();
             serviceSocket.connect(new InetSocketAddress(ip, port));
-     //       serviceSocket.setSoTimeout(3000);
+            serviceSocket.setSoTimeout(3000);
         } catch (RuntimeException e) {
             throw new EthrenetException();
         }
@@ -35,7 +38,7 @@ public class ServiceSocket {
         Logger.Log(ServiceSocket.class, "Service Socket Created");
     }
 
-    public static void sendRegReq(String login, String password) throws Exception {
+    public void sendRegReq(String login, String password) throws Exception {
         Logger.Log(ServiceSocket.class, "Try to send Reg req");
         servicewriter.println(Packets.registerPacket(login, password));
         String answer = servicereciver.readLine();
@@ -44,17 +47,14 @@ public class ServiceSocket {
         } else if (answer.equals("OK")) {
             Succefuls.RegisterSucces();
         }
-        System.out.println(answer);
         closeServiceSocket();
     }
 
-    public static void sendLoginReq(String login, String password) throws Exception {
+    public void sendLoginReq(String login, String password) throws Exception {
         Logger.Log(ServiceSocket.class, "Try to send login req");
         servicewriter.println(Packets.loginPacket(login, password));
         String answer;
-        do {
-            answer = servicereciver.readLine();
-        }while (answer == null);
+        answer = servicereciver.readLine();
         closeServiceSocket();
         if (answer.equals("Error")) {
             throw new LoginException();
@@ -63,16 +63,13 @@ public class ServiceSocket {
             Token.writeTokenFile(answer);
             SettingPanel.connectButton.doClick();
         }
-
     }
 
-    public static void sendTokenValid() throws Exception {
+    public void sendTokenValid() throws Exception {
         Logger.Log(ServiceSocket.class, "Try to send Token valid");
         servicewriter.println(Packets.pingToken());
         String answer;
-        do {
-            answer = servicereciver.readLine();
-        } while (answer == null);
+        answer = servicereciver.readLine();
         closeServiceSocket();
         if (answer.equals("Error")) {
            Token.delTokenFile();
@@ -80,13 +77,10 @@ public class ServiceSocket {
 
     }
 
-    public static boolean sendKeyCHeckRequest() throws Exception {
+    public boolean sendKeyCHeckRequest() throws Exception {
         Logger.Log(ServiceSocket.class, "Try to send Check Key Request");
         servicewriter.println(Packets.checkKey());
-        String answer;
-        do{
-            answer = servicereciver.readLine();
-        }while (answer==null);
+        String answer = servicereciver.readLine();
         closeServiceSocket();
         if (answer.equals("ERROR")){
             Logger.Log(ServiceSocket.class, "Key Request Status " + answer);
@@ -99,19 +93,17 @@ public class ServiceSocket {
         }
         return false;
     }
-    public static void sendPublicKey() throws Exception {
+
+    public void sendPublicKey() throws Exception {
         Logger.Log(ServiceSocket.class, "Try to send Public Key");
         servicewriter.println(Packets.pingKey());
-        String answer = null;
-        while (answer == null) {
-            answer = servicereciver.readLine();
-        }
+        String answer = servicereciver.readLine();
+        closeServiceSocket();
         JSONObject jsonObject = PacketParser.parse(answer);
         String somestrg = (String) jsonObject.get("AKY");
         NetworkVariables.setAESKEY(RSACrypterDecrypter.Decrypt(somestrg));
         NetworkVariables.setSALT((String) jsonObject.get("SALT"));
         AesCrypterDecrypter.initCiphers(NetworkVariables.getAESKEY(), NetworkVariables.getSALT());
-        closeServiceSocket();
     }
 
 
@@ -121,4 +113,5 @@ public class ServiceSocket {
         servicewriter.close();
         Logger.Log(ServiceSocket.class, "Service Socket Closed");
     }
+
 }

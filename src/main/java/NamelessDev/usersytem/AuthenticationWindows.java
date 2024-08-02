@@ -76,8 +76,8 @@ public class AuthenticationWindows implements IRegistration {
         Logger.Log(AuthenticationWindows.class, "Try to Sending registration request from menu");
         try {
             if (LoginRegFilter.filter(login.getText(), 30, 4) == 2 & LoginRegFilter.filter(password.getText(), 30, 4) == 2) {
-                new ServiceSocket(ip, port);
-                ServiceSocket.sendRegReq(login.getText(), password.getText());
+                var serviceSocket = new ServiceSocket(ip, port);
+                serviceSocket.sendRegReq(login.getText(), password.getText());
             }
         } catch (Exception e) {
             Logger.Log(AuthenticationWindows.class, "Exception " + e);
@@ -88,10 +88,11 @@ public class AuthenticationWindows implements IRegistration {
     @Override
     public void Send_login_request() throws IOException, EthrenetException {
         Logger.Log(AuthenticationWindows.class, "Try to Sending login request from menu");
+
         try {
             if (LoginRegFilter.filter(login.getText(), 30, -1) == 2 & LoginRegFilter.filter(password.getText(), 30, -1) == 2) {
-                new ServiceSocket(ip, port);
-                ServiceSocket.sendLoginReq(login.getText(), password.getText());
+                var serviceSocket = new ServiceSocket(ip, port);
+                serviceSocket.sendLoginReq(login.getText(), password.getText());
                 frame.setVisible(false);
             }
         } catch (Exception e) {

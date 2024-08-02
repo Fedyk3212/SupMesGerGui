@@ -47,13 +47,15 @@ public class AutoUpdate {
         while ((nRead = inputStream.read(data, 0, data.length)) != -1) {
             buffer.write(data, 0, nRead);
         }
-        File file = new File("OpenChat.jar");
+        //TODO: Make file name constant
+        File file = new File("OpenChat");
         if (file.exists()) {
             file.delete();
             file.createNewFile();
         } else
             file.createNewFile();
         FileOutputStream fileOutputStream = new FileOutputStream(file);
+        fileOutputStream.close();
         fileOutputStream.write(buffer.toByteArray());
     }
 }

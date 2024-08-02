@@ -31,7 +31,7 @@ public class MainGraphics extends JFrame {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
-    static void setPlaf() throws UnsupportedLookAndFeelException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+    static void setPlaf() throws UnsupportedLookAndFeelException {
 
         UIManager.setLookAndFeel(new NimbusLookAndFeel());
     }

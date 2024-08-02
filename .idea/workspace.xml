@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3755c982-c4c5-4dfd-bf28-dfcd43499a0d" name="Changes" comment="Added Gradle sup">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3755c982-c4c5-4dfd-bf28-dfcd43499a0d" name="Changes" comment="Added Gradle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigsAndLoc/Configs.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigsAndLoc/Configs.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigsAndLoc/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigsAndLoc/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/panels/ChatRoomPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/panels/ChatRoomPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/client/ConsoleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/client/ConsoleHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/localisation/Localisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/localisation/Localisation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/localisation/UnpackLangFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/localisation/UnpackLangFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/panels/SettingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/panels/SettingPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/config/Configs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/config/Configs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/ChatStringFormatter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/features/Async.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/usersytem/AuthenticationWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/usersytem/AuthenticationWindows.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +68,7 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,23 +84,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.OpenChat [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OpenChat [buildDependents].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OpenChat [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OpenChat [check].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.OpenChat [jar].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/usr/bin/scenebuilder&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.AsyncTest.testAsync.executor": "Debug",
+    "Gradle.Build OpenChat.executor": "Run",
+    "Gradle.OpenChat [:AsyncTest.main()].executor": "Debug",
+    "Gradle.OpenChat [:Main.main()].executor": "Run",
+    "Gradle.OpenChat [buildDependents].executor": "Run",
+    "Gradle.OpenChat [build].executor": "Run",
+    "Gradle.OpenChat [check].executor": "Run",
+    "Gradle.OpenChat [jar].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/usr/bin/scenebuilder",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="NamelessDev.client.Main" />
@@ -178,12 +177,45 @@
       <option name="project" value="LOCAL" />
       <updated>1721494011858</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Gradle sup">
+      <option name="closed" value="true" />
+      <created>1721579605651</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721579605651</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Gradle sup">
+      <option name="closed" value="true" />
+      <created>1721579640768</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721579640768</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added Gradle">
+      <option name="closed" value="true" />
+      <created>1721579733737</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721579733737</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added Gradle">
+      <option name="closed" value="true" />
+      <created>1721579758922</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721579758922</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Gradle sup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Gradle sup" />
+    <MESSAGE value="Added Gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Gradle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -242,6 +274,41 @@
           <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
           <line>15</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/client/Main.java</url>
@@ -323,6 +390,69 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>27</line>
+          <properties class="NamelessDev.network.ServiceSocket" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>40</line>
+          <properties class="NamelessDev.network.ServiceSocket" method="sendRegReq">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>52</line>
+          <properties class="NamelessDev.network.ServiceSocket" method="sendLoginReq">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>67</line>
+          <properties class="NamelessDev.network.ServiceSocket" method="sendTokenValid">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>79</line>
+          <properties class="NamelessDev.network.ServiceSocket" method="sendKeyCHeckRequest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>96</line>
+          <properties class="NamelessDev.network.ServiceSocket" method="sendPublicKey">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
+          <line>109</line>
+          <properties class="NamelessDev.network.ServiceSocket" method="closeServiceSocket">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

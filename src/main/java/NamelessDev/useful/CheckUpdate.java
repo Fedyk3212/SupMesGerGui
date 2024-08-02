@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.Objects;
 
 public class CheckUpdate {
-    private static String defaultVersion = "2.0";
+    private static String defaultVersion = "2.5";
     private static String recivedVersion = "";
     public void setDefaultVersion(String version) {
         defaultVersion = version;
