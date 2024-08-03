@@ -1,0 +1,39 @@
+#Panels
+ChatroomPanel=聊天室
+SettingPanel=设置
+HelpPanel=帮助
+HelpPanelDesc=<html>1) 要登录服务器，请单击连接按钮，在相应字段中输入 IP 和端口<br>2) 要更改语言，请单击更改语言 :-)<br>3) 要断开与服务器的连接，请单击设置中的断开连接<br>4 ) 公共服务器选项卡暂时失效<br> 5) 如果您想编写自己的翻译或软件包，请参阅本地化文件夹中的 Example.txt 或 github 上的 wiki。 </html>
+PublicServerPanel=公共服务器
+
+#Buttons
+ConnectButton=连接
+ChangeLanguageButton=更改语言
+DisconnectButton=断开
+YesButton=是
+NoButton=没有
+DontRememberButton=不记得我了
+
+#Messages
+MessageSuccesConnect=连接成功
+MessageFail=我崩溃了
+MessageToLongMessage=信息太长
+MessageToShortMessage=字符串太短
+ChooseLanguageMessage=选择语言
+
+#Error
+ErrorRegistrationTile=注册错误
+ErrorRegistration=注册错误 数据不正确或该用户已存在
+
+#LangPacks(WIP)
+LangPackWindowTile=安装语言包
+LangPackDescriptionButton=说明
+LangPackInstallButton=安装
+
+#UpdateWindow
+UpdateWindowTile=更新
+UpdateWindowMessage=<html>聊天版本已过时，有些功能无法使用或使用错误<br>您想下载最新版本吗？</html>
+
+#Authentication Window
+AuthenticationWindowTile=登录 / 注册
+AuthenticationWindowLoginButton=登录
+AuthenticationWindowRegistrationButton=注册

@@ -24,7 +24,7 @@ ChooseLanguageMessage=Choose your language
 ErrorRegistrationTile=Registration Error
 ErrorRegistration=Registration Error incorrect data or this user already exist
 
-#LangPacks
+#LangPacks(WIP)
 LangPackWindowTile=Install language pack
 LangPackDescriptionButton=Description
 LangPackInstallButton=Install

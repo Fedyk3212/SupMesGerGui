@@ -12,6 +12,11 @@ group = "NamelessDev.client"
 
 java.sourceCompatibility = JavaVersion.VERSION_11
 val mainClass = "NamelessDev.client.Main"
+
+tasks.processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 tasks.jar {
     manifest.attributes["Main-Class"] = mainClass
     val dependencies = configurations

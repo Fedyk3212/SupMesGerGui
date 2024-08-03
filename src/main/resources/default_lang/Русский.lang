@@ -24,7 +24,7 @@ ChooseLanguageMessage=Выберите ваш язык
 ErrorRegistrationTile=Ошибка регистрации
 ErrorRegistration=Ошибка регистрации, некорректные данные или такой пользователь уже существует
 
-#LangPacks
+#LangPacks(WIP)
 LangPackWindowTile=Установить языковой пакет
 LangPackDescriptionButton=Описание
 LangPackInstallButton=Установить

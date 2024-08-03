@@ -28,7 +28,7 @@ ChooseLanguageMessage=
 ErrorRegistrationTile=
 ErrorRegistration=
 
-#LangPacks
+#LangPacks(WIP)
 LangPackWindowTile=
 LangPackDescriptionButton=
 LangPackInstallButton=

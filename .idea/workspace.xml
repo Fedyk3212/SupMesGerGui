@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3755c982-c4c5-4dfd-bf28-dfcd43499a0d" name="Changes" comment="Added Gradle">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/default_lang/Chinise(Simplified).lang" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/panels/SettingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/panels/SettingPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/config/Configs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/config/Configs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/useful/features/Async.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/usersytem/AuthenticationWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NamelessDev/usersytem/AuthenticationWindows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/default_lang/English.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/default_lang/English.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/default_lang/Example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/default_lang/Example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/default_lang/Русский.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/default_lang/Русский.lang" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +82,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle./home/fedxder/Программирование/OpenChatProject/OpenChat [Main.main()].executor": "Run",
     "Gradle.AsyncTest.testAsync.executor": "Debug",
     "Gradle.Build OpenChat.executor": "Run",
     "Gradle.OpenChat [:AsyncTest.main()].executor": "Debug",
@@ -95,15 +92,21 @@
     "Gradle.OpenChat [check].executor": "Run",
     "Gradle.OpenChat [jar].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/usr/bin/scenebuilder",
+    "last_opened_file_path": "/home/fedxder/Программирование/OpenChatProject/OpenChat/src/main/resources/default_lang",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/default_lang" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="NamelessDev.client.Main" />
@@ -209,7 +212,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721579758922</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Gradle">
+      <option name="closed" value="true" />
+      <created>1722609001760</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722609001761</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added Gradle">
+      <option name="closed" value="true" />
+      <created>1722665177642</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722665177642</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -221,238 +240,33 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/client/Main.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/client/Main.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="12" />
+          <line>64</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="13" />
+          <line>63</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>116</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/client/Main.java</url>
-          <line>17</line>
-          <properties class="NamelessDev.client.Main" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java</url>
-          <line>19</line>
-          <properties class="NamelessDev.Graphics.MainGraphics" method="initMainGraphics">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java</url>
-          <line>25</line>
-          <properties class="NamelessDev.Graphics.MainGraphics" method="constructMainFrame">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/Graphics/MainGraphics.java</url>
-          <line>33</line>
-          <properties class="NamelessDev.Graphics.MainGraphics" method="setPlaf">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java</url>
-          <line>23</line>
-          <properties class="NamelessDev.useful.CheckUpdate" method="CheckForUpdates">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="11" />
+          <line>57</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
-          <line>22</line>
-          <properties class="NamelessDev.useful.AutoUpdate" method="update">
+          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/config/Configs.java</url>
+          <line>30</line>
+          <properties class="NamelessDev.config.Configs" method="MakeConfigFile">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
-          <line>35</line>
-          <properties class="NamelessDev.useful.AutoUpdate" method="checkStatus">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/AutoUpdate.java</url>
-          <line>42</line>
-          <properties class="NamelessDev.useful.AutoUpdate" method="writeUpdateToFIle">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/localisation/UnpackLangFiles.java</url>
-          <line>53</line>
-          <properties class="NamelessDev.localisation.UnpackLangFiles" method="pathList">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>27</line>
-          <properties class="NamelessDev.network.ServiceSocket" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>40</line>
-          <properties class="NamelessDev.network.ServiceSocket" method="sendRegReq">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>52</line>
-          <properties class="NamelessDev.network.ServiceSocket" method="sendLoginReq">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>67</line>
-          <properties class="NamelessDev.network.ServiceSocket" method="sendTokenValid">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>79</line>
-          <properties class="NamelessDev.network.ServiceSocket" method="sendKeyCHeckRequest">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>96</line>
-          <properties class="NamelessDev.network.ServiceSocket" method="sendPublicKey">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/network/ServiceSocket.java</url>
-          <line>109</line>
-          <properties class="NamelessDev.network.ServiceSocket" method="closeServiceSocket">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="45" />
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
