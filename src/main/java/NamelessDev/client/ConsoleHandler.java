@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 
 public class ConsoleHandler {
-    private static final boolean debug = true;
+    private static final boolean debug = false;
 
     static void nolog() {
         Logger.noLog = true;

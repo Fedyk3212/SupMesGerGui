@@ -24,8 +24,8 @@ public class Localisation {
         }
     }
 
-    final static String langsPath = "ConfigsAndLoc/localisation";
-    static String choosedLangPath = langsPath + "/";
+    final static String langsPath = "./ConfigsAndLoc/localisation".replace("/", File.separator);
+    static String choosedLangPath = langsPath + File.separator;
     static PropertiesHandler localsationHandler;
 
     public Localisation() throws IOException {

@@ -15,8 +15,8 @@ import java.util.stream.Stream;
 
 public class UnpackLangFiles {
 
-    static String TargetPath = "ConfigsAndLoc/localisation/";
-    static String respath = "/default_lang/";
+    static String TargetPath = "./ConfigsAndLoc/localisation/".replace("/", File.separator);
+    static String respath = "/default_lang/".replace("/", File.separator);
     public static void unpack() throws IOException, URISyntaxException {
         ArrayList<String> localPaths = new ArrayList<>();
         ArrayList<InputStream> streamArrayList = new ArrayList<>();
@@ -25,7 +25,7 @@ public class UnpackLangFiles {
             streamArrayList.add(UnpackLangFiles.class.getResourceAsStream(innerPaths.get(i)));
         }
         for (int i = 0; i != innerPaths.size(); i++) {
-            localPaths.add(innerPaths.get(i).substring(innerPaths.get(i).lastIndexOf("default_lang/")).replace("default_lang/", TargetPath));
+            localPaths.add(innerPaths.get(i).substring(innerPaths.get(i).lastIndexOf("default_lang" + File.separator)).replace("default_lang" + File.separator, TargetPath));
         }
         int cnt = 0;
         File file = new File(TargetPath);
@@ -69,7 +69,7 @@ public class UnpackLangFiles {
         for (Iterator<Path> it = walk.iterator(); it.hasNext(); ) {
             String path = it.next().toString();
             if (path.endsWith(".lang") || path.endsWith(".txt")) {
-                pathList.add(path.substring(path.lastIndexOf("/default_lang")));
+                pathList.add(path.substring(path.lastIndexOf("/default_lang".replace("/", File.separator))));
             }
         }
         return pathList;
