@@ -25,7 +25,7 @@ public class CheckUpdate {
 
         HttpURLConnection con = null;
         try {
-            URL url = new URL("https://raw.githubusercontent.com/BackendIsFun/Open-Chat/master/version.txt");
+            URL url = new URL("https://raw.githubusercontent.com/feodorbal/Open-Chat/refs/heads/master/version.txt");
             con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
             con.getResponseCode();

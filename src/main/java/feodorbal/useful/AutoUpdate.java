@@ -14,7 +14,7 @@ public class AutoUpdate {
 
     static {
         try {
-            url = new URL("https://github.com/BackendIsFun/Open-Chat/releases/latest/download/OpenChat.jar");
+            url = new URL("https://github.com/feodorbal/Open-Chat/releases/latest/download/OpenChat.jar");
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }

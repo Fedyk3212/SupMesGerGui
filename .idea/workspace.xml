@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3755c982-c4c5-4dfd-bf28-dfcd43499a0d" name="Changes" comment="Added Gradle">
+    <list default="true" id="3755c982-c4c5-4dfd-bf28-dfcd43499a0d" name="Changes" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/network/IService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/feodorbal/useful/AutoUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/feodorbal/useful/AutoUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/feodorbal/useful/CheckUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/feodorbal/useful/CheckUpdate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,30 +60,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Gradle./home/fedxder/Программирование/OpenChatProject/OpenChat [Main.main()].executor": "Run",
-    "Gradle.AsyncTest.testAsync.executor": "Debug",
-    "Gradle.Build OpenChat.executor": "Run",
-    "Gradle.OpenChat [:AsyncTest.main()].executor": "Debug",
-    "Gradle.OpenChat [:Main.main()].executor": "Run",
-    "Gradle.OpenChat [:NamelessDev.client.Main.main()].executor": "Run",
-    "Gradle.OpenChat [buildDependents].executor": "Run",
-    "Gradle.OpenChat [build].executor": "Run",
-    "Gradle.OpenChat [check].executor": "Run",
-    "Gradle.OpenChat [jar].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/fedxder/Программирование/Minecraft/LastDayBeforeNight",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "File.Encoding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle./home/fedxder/Программирование/OpenChatProject/OpenChat [Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AsyncTest.testAsync.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.Build OpenChat.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OpenChat [:AsyncTest.main()].executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.OpenChat [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OpenChat [:NamelessDev.client.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OpenChat [buildDependents].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OpenChat [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OpenChat [check].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.OpenChat [jar].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/fedxder/Программирование/Minecraft/LastDayBeforeNight&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/default_lang" />
@@ -90,7 +91,7 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="NamelessDev.client.Main" />
+      <option name="MAIN_CLASS_NAME" value="feodorbal.client.Main" />
       <module name="OpenChat.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -217,41 +218,50 @@
       <option name="project" value="LOCAL" />
       <updated>1722665963520</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="...">
+      <option name="closed" value="true" />
+      <created>1726819386370</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1726819386370</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Gradle sup" />
     <MESSAGE value="Added Gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Gradle" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/feodorbal/useful/CheckUpdate.java</url>
           <line>56</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/feodorbal/useful/CheckUpdate.java</url>
           <line>64</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/feodorbal/useful/CheckUpdate.java</url>
           <line>63</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/useful/CheckUpdate.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/feodorbal/useful/CheckUpdate.java</url>
           <line>57</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/NamelessDev/config/Configs.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/feodorbal/config/Configs.java</url>
           <line>30</line>
-          <properties class="NamelessDev.config.Configs" method="MakeConfigFile">
+          <properties class="feodorbal.config.Configs" method="MakeConfigFile">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
