@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3755c982-c4c5-4dfd-bf28-dfcd43499a0d" name="Changes" comment="Added Gradle">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/default_lang/Chinise(Simplified).lang" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/default_lang/English.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/default_lang/English.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/default_lang/Example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/default_lang/Example.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/default_lang/Русский.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/default_lang/Русский.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NamelessDev/network/IService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,23 +30,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="OpenChat" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="OpenChat" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="OpenChat" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="OpenChat" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -82,11 +61,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "Gradle./home/fedxder/Программирование/OpenChatProject/OpenChat [Main.main()].executor": "Run",
     "Gradle.AsyncTest.testAsync.executor": "Debug",
     "Gradle.Build OpenChat.executor": "Run",
     "Gradle.OpenChat [:AsyncTest.main()].executor": "Debug",
     "Gradle.OpenChat [:Main.main()].executor": "Run",
+    "Gradle.OpenChat [:NamelessDev.client.Main.main()].executor": "Run",
     "Gradle.OpenChat [buildDependents].executor": "Run",
     "Gradle.OpenChat [build].executor": "Run",
     "Gradle.OpenChat [check].executor": "Run",
@@ -95,7 +76,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/fedxder/Программирование/OpenChatProject/OpenChat/src/main/resources/default_lang",
+    "last_opened_file_path": "/home/fedxder/Программирование/Minecraft/LastDayBeforeNight",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -228,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722665177642</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added Gradle">
+      <option name="closed" value="true" />
+      <created>1722665963520</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722665963520</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
