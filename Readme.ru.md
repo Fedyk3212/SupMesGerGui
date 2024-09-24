@@ -10,7 +10,7 @@ _бывшее название SupMesGER GUI_
 # Клиент плюс сервер (сморти Releases) в простой но постоянно расширяющейся программе
 ## минимальная версия JRE 17(Только для портативной версии)
 
-![Image alt](https://github.com/Fedyk3212/Open-Chat/blob/228150aa8ff3b40c62c5f90b037d6cb7edae6936/logo.png)
+![Image alt](https://github.com/feodorbal/Open-Chat/blob/master/logo_new.png)
 
   ***!Внимание!
    Версия 1.5 названная "registartion update" не работает со старыми серверами
