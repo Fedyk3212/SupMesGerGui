@@ -14,7 +14,7 @@ public class AutoUpdate {
 
     static {
         try {
-            url = new URL("https://github.com/feodorbal/Open-Chat/releases/latest/download/OpenChat.jar");
+            url = new URL("https://github.com/feodorbal/Open-Chat/releases/latest/download/OpenChat-" + CheckUpdate.latestVer + ".jar");
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
@@ -47,14 +47,14 @@ public class AutoUpdate {
         while ((nRead = inputStream.read(data, 0, data.length)) != -1) {
             buffer.write(data, 0, nRead);
         }
-        File file = new File("./OpenChat");
+        File file = new File("./OpenChat-" + CheckUpdate.latestVer + ".jar");
         if (file.exists()) {
             file.delete();
             file.createNewFile();
         } else
             file.createNewFile();
         FileOutputStream fileOutputStream = new FileOutputStream(file);
-        fileOutputStream.close();
         fileOutputStream.write(buffer.toByteArray());
+        fileOutputStream.close();
     }
 }

@@ -27,7 +27,7 @@ public class ConsoleHandler {
 
     static void setDefaultVersion(String version) {
         CheckUpdate checkUpdate = new CheckUpdate();
-        checkUpdate.setDefaultVersion(version);
+        checkUpdate.setLatestVer(version);
     }
 
     static void setMaxMessageLimit(int limit) {
@@ -48,7 +48,7 @@ public class ConsoleHandler {
             switch (args[0]) {
                 case "-h":
                     printHelp();
-                    System.exit(1);
+                    System.exit(0);
                     break;
                 case "-nologFile":
                     nolog();

@@ -9,6 +9,7 @@ javafx {
 }
 
 group = "feodorbal.client"
+version = "2.5.1"
 
 java.sourceCompatibility = JavaVersion.VERSION_11
 val mainClass = "feodorbal.client.OpenChat"
@@ -19,6 +20,7 @@ tasks.processResources {
 
 tasks.jar {
     manifest.attributes["Main-Class"] = mainClass
+    archiveBaseName = "OpenChat"
     val dependencies = configurations
         .runtimeClasspath
         .get()

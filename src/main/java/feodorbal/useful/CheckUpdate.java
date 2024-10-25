@@ -15,10 +15,10 @@ import java.net.URL;
 import java.util.Objects;
 
 public class CheckUpdate {
-    private static String defaultVersion = "2.5";
+    protected static String latestVer = "2.5.1";
     private static String recivedVersion = "";
-    public void setDefaultVersion(String version) {
-        defaultVersion = version;
+    public void setLatestVer(String version) {
+        latestVer = version;
     }
 
     public static void CheckForUpdates() throws IOException {
@@ -39,7 +39,7 @@ public class CheckUpdate {
             recivedVersion = scanner.readLine();
             scanner.close();
             con.disconnect();
-            if (Objects.equals(recivedVersion, defaultVersion)) {
+            if (Objects.equals(recivedVersion, latestVer)) {
                 Logger.Log(CheckUpdate.class, "Version Correct");
             } else {
                 Logger.Log(CheckUpdate.class, "Outdated");
