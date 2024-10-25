@@ -11,8 +11,8 @@ import java.io.IOException;
 public class MainGraphics extends JFrame {
     static Color defaultColor = new Color(0x636363);
     public static Color defaultPanelColor = new Color(0x404040);
-    public MainGraphics() throws IOException, UnsupportedLookAndFeelException, ClassNotFoundException, InstantiationException, IllegalAccessException {
-        super("Open_Chat_Made_by_Nameless_Dev");
+    public MainGraphics() throws IOException, UnsupportedLookAndFeelException {
+        super("Open_Chat_Made_by_feodorbal");
         setPlaf();
         getContentPane().add(new MainTabbedPane());
     }

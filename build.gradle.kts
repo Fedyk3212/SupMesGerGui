@@ -8,10 +8,10 @@ javafx {
     modules("javafx.controls", "javafx.fxml")
 }
 
-group = "NamelessDev.client"
+group = "feodorbal.client"
 
 java.sourceCompatibility = JavaVersion.VERSION_11
-val mainClass = "NamelessDev.client.Main"
+val mainClass = "feodorbal.client.OpenChat"
 
 tasks.processResources {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE

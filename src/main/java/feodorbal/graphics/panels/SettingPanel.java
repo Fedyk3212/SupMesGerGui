@@ -1,8 +1,8 @@
 package feodorbal.graphics.panels;
 
-import feodorbal.graphics.MainGraphics;
 import feodorbal.client.Client;
 import feodorbal.config.Configs;
+import feodorbal.graphics.MainGraphics;
 import feodorbal.localisation.Localisation;
 import feodorbal.network.NetworkVariables;
 import feodorbal.network.ServiceSocket;

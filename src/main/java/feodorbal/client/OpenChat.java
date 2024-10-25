@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.security.NoSuchAlgorithmException;
 
-public class Main {
+public class OpenChat {
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, UnsupportedLookAndFeelException, ClassNotFoundException, InstantiationException, IllegalAccessException, URISyntaxException, ParseException {
         ConsoleHandler.parseArgs(args);
         ValidateConfigs.validate();
@@ -34,7 +34,7 @@ public class Main {
                 throw new RuntimeException(e);
             }
         }));
-        Logger.Log(Main.class, "ShutDown hook Created");
+        Logger.Log(OpenChat.class, "ShutDown hook Created");
     }
 
 
