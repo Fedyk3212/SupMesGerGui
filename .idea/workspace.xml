@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3755c982-c4c5-4dfd-bf28-dfcd43499a0d" name="Changes" comment="java fx">
-      <change afterPath="$PROJECT_DIR$/src/main/java/feodorbal/crossplatform/CrossPlatform.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/feodorbal/localisation/Localies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/feodorbal/client/ConsoleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/feodorbal/client/ConsoleHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/feodorbal/localisation/Localisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/feodorbal/localisation/Localisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/feodorbal/crossplatform/CrossPlatform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/feodorbal/useful/crossplatform/CrossPlatform.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/feodorbal/localisation/UnpackLangFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/feodorbal/localisation/UnpackLangFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/feodorbal/useful/AutoUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/feodorbal/useful/AutoUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/feodorbal/useful/CheckUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/feodorbal/useful/CheckUpdate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,14 +244,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727279079433</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="java fx">
+      <option name="closed" value="true" />
+      <created>1729875789221</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729875789221</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Gradle sup" />
     <MESSAGE value="Added Gradle" />
     <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
+    <MESSAGE value="java fx" />
+    <option name="LAST_COMMIT_MESSAGE" value="java fx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -330,9 +333,9 @@
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/feodorbal/crossplatform/CrossPlatform.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/feodorbal/useful/crossplatform/CrossPlatform.java</url>
           <line>6</line>
-          <properties class="feodorbal.crossplatform.CrossPlatform" method="getResource">
+          <properties class="feodorbal.useful.crossplatform.CrossPlatform">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

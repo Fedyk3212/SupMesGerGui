@@ -1,6 +1,6 @@
 package feodorbal.localisation;
 
-import feodorbal.crossplatform.CrossPlatform;
+import feodorbal.useful.crossplatform.CrossPlatform;
 import feodorbal.useful.Logger;
 
 import java.io.*;
