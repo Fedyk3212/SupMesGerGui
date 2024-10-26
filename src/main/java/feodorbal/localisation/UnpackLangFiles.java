@@ -1,6 +1,5 @@
 package feodorbal.localisation;
 
-import feodorbal.useful.crossplatform.CrossPlatform;
 import feodorbal.useful.Logger;
 
 import java.io.*;
@@ -16,14 +15,14 @@ import java.util.stream.Stream;
 
 public class UnpackLangFiles {
 
-    static String TargetPath = "./ConfigsAndLoc/localisation/".replace("/", File.separator);
-    static String respath = "/default_lang/".replace("/", File.separator);
+    static String TargetPath = "./ConfigsAndLoc/localisation/";
+    static String respath = "/default_lang/";
     public static void unpack() throws IOException, URISyntaxException {
         ArrayList<String> localPaths = new ArrayList<>();
         ArrayList<InputStream> streamArrayList = new ArrayList<>();
         ArrayList<String> innerPaths = pathList();
         for (int i = 0; i != innerPaths.size(); i++) {
-            streamArrayList.add(CrossPlatform.getResourceAsStream(UnpackLangFiles.class, innerPaths.get(i)));
+            streamArrayList.add(UnpackLangFiles.class.getResourceAsStream(innerPaths.get(i)));
         }
         for (int i = 0; i != innerPaths.size(); i++) {
             localPaths.add(innerPaths.get(i).substring(innerPaths.get(i).lastIndexOf("default_lang" + File.separator)).replace("default_lang" + File.separator, TargetPath));
@@ -54,7 +53,7 @@ public class UnpackLangFiles {
 
     public static ArrayList<String> pathList() throws IOException, URISyntaxException {
         ArrayList<String> pathList = new ArrayList<>();
-        URI uri = Objects.requireNonNull(CrossPlatform.getResource(UnpackLangFiles.class, respath)).toURI();
+        URI uri = Objects.requireNonNull(UnpackLangFiles.class.getResource(respath)).toURI();
         Path myPath;
         if (uri.getScheme().equals("jar")) {
             try {

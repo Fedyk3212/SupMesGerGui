@@ -11,7 +11,6 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Locale;
 import java.util.Objects;
 
 public class Localisation {
@@ -25,7 +24,7 @@ public class Localisation {
         }
     }
 
-    final static String langsPath = "./ConfigsAndLoc/localisation".replace("/", File.separator);
+    final static String langsPath = "./ConfigsAndLoc/localisation";
     static String choosedLangPath = langsPath + File.separator;
     static PropertiesHandler localsationHandler;
 
@@ -35,7 +34,7 @@ public class Localisation {
 
     public static void initLocalisation() throws IOException, URISyntaxException, ParseException {
         UnpackLangFiles.unpack();
-       // UnpackLangPacks.unpack();
+        // UnpackLangPacks.unpack();
         firstChoiceMenu();
         choose();
         new Localisation();
@@ -47,7 +46,7 @@ public class Localisation {
         String[] options = getOptionList();
         int selection;
         if (configs.readByName("Lang").equals("None")) {
-            selection = JOptionPane.showOptionDialog(null, "Choose your language/Выберите ваш язык", "Language", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
+            selection = JOptionPane.showOptionDialog(null, "Choose your language", "Language", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
             configs.changeByName("Lang", options[selection]);
         }
     }
